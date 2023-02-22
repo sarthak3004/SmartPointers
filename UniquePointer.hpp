@@ -51,6 +51,10 @@ public:
         }
         return *this;
     }
+   
+   T operator*(){
+        return *m_ptr;
+    }
     
 };
 
