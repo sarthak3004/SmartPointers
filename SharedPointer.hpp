@@ -52,6 +52,10 @@ public:
     SharedPointer(SharedPointer&&)=delete;
 
     SharedPointer& operator=(SharedPointer&&)=delete;
+   
+   T operator*(){
+        return *m_ptr;
+    }
     
 };
 
